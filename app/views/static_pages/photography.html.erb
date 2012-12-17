@@ -1,0 +1,43 @@
+<div class= "container">
+
+<div class="row">
+	<div class="span12">
+		<a href="#" class="Photog-Overlay">Persons Overlay</a>
+	</div>
+</div>
+
+
+<div class="row">
+    <div class="span4">
+		<a href="#MyModal" class="Persons-Overlay">Persons Overlay</a>
+    </div>
+    <div class="span4">
+		<a href="#" class="Places-Overlay">Places Overlay</a>	
+    </div>
+    <div class="span4">
+		<a href="#" class="Things-Overlay">Things Overlay</a>	
+	</div>
+</div>
+
+<!-- Modal -->
+<header>
+	<script src="bootstrap.min.js"/>
+	<script $('#myModal').modal(options) />
+</header>
+
+<div id="myModal"class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myModalLabel">Modal header</h3>
+	</div>
+	<div class="modal-body">
+		<p>One fine body…</p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		<button class="btn btn-primary">Save changes</button>
+	</div>
+</div>
+
+<script> $('#myModal').modal(options) </script>
+

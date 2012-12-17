@@ -1,0 +1,8 @@
+<h1>Blog#blog</h1>
+
+<% @posts.each do |post| %> 
+<% if post.type == "regular" %> 
+<div > 
+<p style="margin-left:15px; width:650px; padding-top:10px;"> <strong><%= post.regular_title %></strong></p> 
+<p style="margin-left:15px; width:650px; padding-top:10px;"> <%= post.regular_body.html_safe %></p> 
+</div> 
