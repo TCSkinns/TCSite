@@ -37,7 +37,7 @@ textarea {
   padding-left: 60px;
   margin-bottom: 30px;
   margin-top: 30px;
-  background-image: url(../tandj.jpg);
+  background-image: url('/assets/tandj.jpg');
   background-repeat: no-repeat;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -146,7 +146,7 @@ p {
 /* Photography */
 
 .Persons-Overlay {
-	background: url('/worship.jpg') no-repeat; 
+	background: url('/assets/worship.jpg') no-repeat; 
 	width: 320px;
 	height: 214px;
 	display: block;
@@ -155,13 +155,13 @@ p {
 }
 
 .Persons-Overlay:HOVER {
-	background: url('/persons.png') no-repeat; 
+	background: url('/assets/persons.png') no-repeat; 
 	width: 320px;
 	height: 214px;
 }
 
 .Places-Overlay {
-	background: url('/champlain.jpg') no-repeat; 
+	background: url('/assets/champlain.jpg') no-repeat; 
 	width: 320px;/*width: of image*/;
 	height: 214px;
 	display: block;
@@ -170,23 +170,22 @@ p {
 }
 
 .Places-Overlay:HOVER {
-	background: url('/places.png') no-repeat; 
+	background: url('/assets/places.png') no-repeat; 
 	width: 320px;
 	height: 214px;
 }	
 
 .Things-Overlay {
-	background: url('/tokyo.jpg') no-repeat; 
-	width: 320px;/*width: of image*/;
+	background: url('/assets/tokyo.jpg') no-repeat; 
+	width: 320px;
 	height: 214px;
-	float: center;
 	display: block;
 	text-indent: -1000px;
 	overflow: hidden;
 }
 
 .Things-Overlay:HOVER {
-	background: url('/things.png') no-repeat; 
+	background: url('/assets/things.png') no-repeat; 
 	width: 320px;
 	height: 214px;
 }
@@ -198,17 +197,16 @@ p {
 }
 
 .Photog-Overlay {
-	background: url('/tsphotoginvert.jpg') no-repeat; 
+	background: url('/assets/tsphotoginvert.jpg') no-repeat; 
 	width: 960px;/*width: of image*/;
 	height: 214px;
-	float: center;
 	display: block;
 	text-indent: -1000px;
 	overflow: hidden;	
 }
 
 .Photog-Overlay:HOVER {
-	background: url('/tsphotog.jpg') no-repeat; 
+	background: url('/assets/tsphotog.jpg') no-repeat; 
 	width: 960px;
 	height: 214px;
 }
@@ -220,7 +218,7 @@ p {
 /*BUSINESS CONCEPTS*/
 
 .BIZ-Overlay{
-	background: url('/bizconcepts.jpg') no-repeat; 
+	background: url('/assets/bizconcepts.jpg') no-repeat; 
 	width: 960px;/*width: of image*/;
 	height: 214px;
 	float: center;
@@ -230,13 +228,13 @@ p {
 }
 
 .BIZ-Overlay:HOVER {
-	background: url('/bizconceptsINVERSE.jpg') no-repeat; 
+	background: url('/assets/bizconceptsINVERSE.jpg') no-repeat; 
 	width: 960px;
 	height: 214px;
 }
 
 .HELO-Overlay{
-	background: url('/helo.png') no-repeat; 
+	background: url('/assets/helo.png') no-repeat; 
 	width: 320px;/*width: of image*/;
 	height: 214px;
 	float: center;
@@ -250,7 +248,7 @@ p {
 }
 
 .DTF-Overlay{
-	background: url('/dtf.png') no-repeat; 
+	background: url('/assets/dtf.png') no-repeat; 
 	width: 320px;/*width: of image*/;
 	height: 214px;
 	float: center;
@@ -264,7 +262,7 @@ p {
 }
 
 .SPANK-Overlay{
-	background: url('/spank.png') no-repeat; 
+	background: url('/assets/spank.png') no-repeat; 
 	width: 320px;/*width: of image*/;
 	height: 214px;
 	float: center;
@@ -278,7 +276,7 @@ p {
 }
 
 .EUROBEGO-Overlay{
-	background: url('/eurobego.png') no-repeat; 
+	background: url('/assets/eurobego.png') no-repeat; 
 	width: 320px;/*width: of image*/;
 	height: 214px;
 	float: center;
@@ -292,7 +290,7 @@ p {
 }
 
 .WATERBEERS-Overlay{
-	background: url('/waterbeers.png') no-repeat; 
+	background: url('/assets/waterbeers.png') no-repeat; 
 	width: 320px;/*width: of image*/;
 	height: 214px;
 	float: center;
@@ -306,7 +304,7 @@ p {
 }
 
 .SOAPBOX-Overlay{
-	background: url('/soapbox.png') no-repeat; 
+	background: url('/assets/soapbox.png') no-repeat; 
 	width: 320px;/*width: of image*/;
 	height: 214px;
 	float: center;
