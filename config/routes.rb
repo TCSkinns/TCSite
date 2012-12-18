@@ -5,7 +5,7 @@ TCSite::Application.routes.draw do
 
   get "about" => 'static_pages#about'
 
-  get "blog" => 'blog#blog'
+  get "blog" => 'static_pages#blog'
 
   get "businessconcepts" => 'static_pages#businessconcepts'
 
