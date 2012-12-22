@@ -205,7 +205,7 @@ p {
 /*BUSINESS CONCEPTS*/
 
 .BIZ-Overlay{
-	background: asset-url("bizconepts.jpg", image) no-repeat; 
+	background: asset-url("bizconcepts.jpg", image) no-repeat; 
 	width: 960px;/*width: of image*/;
 	height: 214px;
 	float: center;
@@ -245,7 +245,9 @@ p {
 }
 
 .DTF-Overlay:HOVER{
-	
+	background: asset-url("DTFcomp.jpg", image) no-repeat; 
+	width: 320px;
+	height: 214px;
 }
 
 .SPANK-Overlay{
@@ -259,7 +261,9 @@ p {
 }
 
 .SPANK-Overlay:HOVER{
-	
+	background: asset-url("spankcomp.jpg", image) no-repeat; 
+	width: 320px;
+	height: 214px;
 }
 
 .EUROBEGO-Overlay{
@@ -302,4 +306,28 @@ p {
 
 .SOAPBOX-Overlay:HOVER{
 	
+}
+
+/*ABOUT*/
+
+.TWorld{
+	background: asset-url("tworld.jpg", image) no-repeat; 
+	width: 960px;/*width: of image*/;
+	height: 100px;
+	float: center;
+	display: block;
+	text-indent: -1000px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+.About{
+	background: asset-url("aboutbody.jpg", image) no-repeat; 
+	width: 960px;/*width: of image*/;
+	height: 500px;
+	float: center;
+	display: block;
+	text-indent: -1000px;
+	overflow: hidden;
+	margin-top: 0px;
 }
