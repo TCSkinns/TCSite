@@ -37,7 +37,7 @@ textarea {
   padding-left: 60px;
   margin-bottom: 30px;
   margin-top: 30px;
-  background: asset-url("tandj.jpg", image);
+  background-image: asset-url("tandj.jpg", image);
   background-repeat: no-repeat;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -163,7 +163,7 @@ p {
 }	
 
 .Things-Overlay {
-	background: asset-url("tokyo.jpg", image) no-repeat;
+	background: asset-url("tokyoservice.jpg", image) no-repeat;
 	width: 320px;
 	height: 214px;
 	display: block;
