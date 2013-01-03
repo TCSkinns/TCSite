@@ -1,3 +1,6 @@
+<body>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 <div class= "container">
 
 <div class="row">
@@ -8,9 +11,24 @@
 
 
 <div class="row">
+    <div class="modal fade" id="Persons_Modal">
+  		<div class="modal-header">
+    		<a class="close" data-dismiss="modal">&times;</a>
+    		<h3>Modal Header</h3>
+  		</div>
+  		<div class="modal-body">
+    		<p>Test Modal</p>
+  		</div>
+  		<div class="modal-footer">
+    		<a href="#" class="btn" data-dismiss="modal">Close</a>
+    		<a href="#" class="btn btn-primary">Save Changes</a>
+  		</div>
+	</div>
+
     <div class="span4">
-		<a href="#MyModal" class="Persons-Overlay">Persons Overlay</a>
+		<a href="#Persons_Modal" class="Persons-Overlay" data-toggle="modal">Persons Overlay</a>
     </div>
+
     <div class="span4">
 		<a href="#" class="Places-Overlay">Places Overlay</a>	
     </div>
