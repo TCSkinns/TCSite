@@ -1,61 +1,110 @@
-<body>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-<div class= "container">
+<!DOCTYPE html>   
+<html lang="en">   
+<head>   
+<title>Tommy Skinner Photography</title>
+<%= stylesheet_link_tag "/bootstrap/bootstrap-image-gallery.min.css" %>
+</head>  
+    <body>  
+        <div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">&times;</a>
+                <h3 class="modal-title"></h3>
+            </div>
+        
+        <div class="modal-body">
+            <div class="modal-image">
+            </div>
+        </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary modal-next">Next <i class="icon-arrow-right icon-white"></i></a>
+                    <a class="btn btn-info modal-prev"><i class="icon-arrow-left icon-white"></i> Previous</a>
+                    <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play icon-white"></i> Slideshow</a>
+                    <a class="btn modal-download" target="_blank"><i class="icon-download"></i> Download</a>
+                </div>
+        </div>
+    
+<div class="container">   
 
-<div class="row">
-	<div class="span12">
-		<a href="#" class="Photog-Overlay">Photog Overlay</a>
-	</div>
-</div>
-
-
-<div class="row">
-    <div class="modal fade" id="Persons_Modal">
-  		<div class="modal-header">
-    		<a class="close" data-dismiss="modal">&times;</a>
-    		<h3>Modal Header</h3>
-  		</div>
-  		<div class="modal-body">
-    		<p>Test Modal</p>
-  		</div>
-  		<div class="modal-footer">
-    		<a href="#" class="btn" data-dismiss="modal">Close</a>
-    		<a href="#" class="btn btn-primary">Save Changes</a>
-  		</div>
-	</div>
-
-    <div class="span4">
-		<a href="#Persons_Modal" class="Persons-Overlay" data-toggle="modal">Persons Overlay</a>
+    <div class="row">
+        <div class="span12">
+            <a class="Photog-Overlay">Photog Overlay</a>
+         </div>
     </div>
 
-    <div class="span4">
-		<a href="#" class="Places-Overlay">Places Overlay</a>	
+    <div class="row">
+        <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
+            <div class="span4">
+                <%= link_to "Persons", image_path("worshipfull.jpg"), :title=> 'Worship', :class => 'Persons-Overlay', :'data-gallery' => 'gallery' %>
+                <%= link_to "Cayos Cachinos", image_path("cayosboy.jpg"), :title=> 'Wondering Eyes', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Honduras", image_path("hondurangirl.jpg"), :title=> 'Candy Break', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Lisa and Scott's Wedding", image_path("lisascott.jpg"), :title=> 'Newly Weds', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "The G Unit Color", image_path("guidoscolor.jpg"), :title=> 'Family Photo', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "The G Unit BW", image_path("guidosbw.jpg"), :title=> 'Tickle Monster', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Burmese Boy", image_path("burmesechild.jpg"), :title=> 'High Five', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Namibia", image_path("africankids.jpg"), :title=> '3s A Company', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Infinity Pool", image_path("infinitypool.jpg"), :title=> 'Infinity and Beyond', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Tokyo Rail", image_path("japantrain.jpg"), :title=> 'Tokyo Rail', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "BKK Newspaper", image_path("newspaper.jpg"), :title=> 'BKK News', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Paris Doors", image_path("parisdoors.jpg"), :title=> 'Knock Knock', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Arequipa, Peru", image_path("perugirl.jpg"), :title=> 'Peek Ah Boo', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Picture in Picture", image_path("selfie.jpg"), :title=> 'Picture in Picture', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Tokyo Jump Rope", image_path("tokyojumprope.jpg"), :title=> 'Old Fashioned Fun', :class => 'invisible', :'data-gallery' => 'gallery' %>
+            </div>
+        </div>    
+        <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">   
+            <div class="span4">
+                <%= link_to "Places", image_path("champlainbench.jpg"), :title=> 'Lake Champlain', :class => 'Places-Overlay', :'data-gallery' => 'gallery' %>
+                <%= link_to "BKK Intersection", image_path("bkkintersection.jpg"), :title=> 'BKK Intersection', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Boston Skyline", image_path("bostonskyline.jpg"), :title=> 'Boston Skyline', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Burt's Detroit", image_path("burts.jpg"), :title=> 'Burts - Eastern Market, Detroit', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Burlington, Vermont", image_path("champlainboat.jpg"), :title=> 'Burlington, Vermont', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Amsterdamn", image_path("coffeeshop.jpg"), :title=> 'Amsterdam', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Venice Beach", image_path("fallin.jpg"), :title=> 'Venice Beach, California', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Honduras", image_path("honduraswf.jpg"), :title=> 'Honduras', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Surf City USA", image_path("huntingtonbeach.jpg"), :title=> 'Surf City, USA', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Kyoto, Japan", image_path("kyototemple.jpg"), :title=> 'Kyoto, Japan', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "The Lourvre", image_path("louvre.jpg"), :title=> 'The Louvre', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Machu Pichu", image_path("machu.jpg"), :title=> 'Machu Pichu', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Chiang Mai, Thailand", image_path("moatroad.jpg"), :title=> 'Chiang Mai, Thailand', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "New Zealand", image_path("nzfarm.jpg"), :title=> 'New Zealand', :class => 'invisible', :'data-gallery' => 'gallery' %> 
+                <%= link_to "Ollantaytambo, Peru", image_path("oyanta.jpg"), :title=> 'Ollantaytambo, Peru', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Packard Plant, Detroit", image_path("packardplant.jpg"), :title=> 'Packard Plant - Detroit, MI', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Philadelphia", image_path("philly.jpg"), :title=> 'Philadelphia, Pennsylvania', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "London", image_path("picadelly.jpg"), :title=> 'London, England', :class => 'invisible', :'data-gallery' => 'gallery' %> 
+                <%= link_to "Muskegon, Michigan", image_path("sunsetbw.jpg"), :title=> 'Muskegon, Michigan', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Tokyo Fish Market", image_path("tokyofishmarket.jpg"), :title=> 'Tokyo Fish Market', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Detroit, Michigan", image_path("trainstation.jpg"), :title=> 'Detroit, Michigan', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Las Vegas", image_path("vegas.jpg"), :title=> 'Las Vegas, Nevada', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Los Angeles, California", image_path("venicebeach.jpg"), :title=> 'Los Angeles, California', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Koh Chang, Thailand", image_path("waterfall.jpg"), :title=> 'Ko Chang, Thailand', :class => 'invisible', :'data-gallery' => 'gallery' %>
+            </div>
+        </div>
+    
+        <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">  
+            <div class="span4">
+                <%= link_to "Things", image_path("tokyoservice.jpg"), :title=> 'Tokyo Service', :class => 'Things-Overlay', :'data-gallery' => 'gallery' %>
+                <%= link_to "Amstel", image_path("amstel.jpg"), :title=> 'One too Many', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Architectural Road", image_path("bostonbuilding.jpg"), :title=> 'Road to Nowhere', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "The L", image_path("chil.jpg"), :title=> 'The L', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Franz Glacier", image_path("nzglacier.jpg"), :title=> 'Franz Joseph Glacier', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Sheeping Overlook", image_path("nzsheep.jpg"), :title=> 'Sheeping Overlook', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Train Clock", image_path("parisclock.jpg"), :title=> 'Departure Time', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Lonely Street", image_path("prague.jpg"), :title=> 'Lonely Road', :class => 'invisible', :'data-gallery' => 'gallery' %> 
+                <%= link_to "Rural Railroad", image_path("railroad.jpg"), :title=> 'Rural Railroad', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Grassy View", image_path("smgrass.jpg"), :title=> 'Grassy View', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Reflecting Lamp", image_path("smlamp.jpg"), :title=> 'Light Reflection', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Urban Subaru", image_path("subaru.jpg"), :title=> 'Urban Subaru', :class => 'invisible', :'data-gallery' => 'gallery' %> 
+                <%= link_to "Subaru STI", image_path("subarufront.jpg"), :title=> 'Subaru STI', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Tokyo Frank", image_path("tokyofrank.jpg"), :title=> 'Tokyo Frank', :class => 'invisible', :'data-gallery' => 'gallery' %>
+                <%= link_to "Wood", image_path("wood.jpg"), :title=> 'Splinters', :class => 'invisible', :'data-gallery' => 'gallery' %>
+            </div>
+        </div>
     </div>
-    <div class="span4">
-		<a href="#" class="Things-Overlay">Things Overlay</a>	
-	</div>
 </div>
 
-<!-- Modal -->
-<header>
-	<script src="bootstrap.min.js"/>
-	<script $('#myModal').modal(options) />
-</header>
-
-<div id="myModal"class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-		<h3 id="myModalLabel">Modal header</h3>
-	</div>
-	<div class="modal-body">
-		<p>One fine body…</p>
-	</div>
-	<div class="modal-footer">
-		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-		<button class="btn btn-primary">Save changes</button>
-	</div>
-</div>
-
-<script> $('#myModal').modal(options) </script>
-
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://blueimp.github.com/cdn/js/bootstrap.min.js"></script>
+        <script src="http://blueimp.github.com/JavaScript-Load-Image/load-image.min.js"></script>
+        <script src="bootstrap/js/bootstrap-image-gallery.min.js"></script>
+    </body>  
+</html>  

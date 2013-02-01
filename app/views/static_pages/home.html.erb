@@ -7,33 +7,29 @@
       </div>
 
       <!-- Example row of columns -->
-      <div class="homepagelinks">
       <div class="row">
         <div class="span4">
-          <%= link_to image_tag("/assets/BUSINESSCONCEPTS.jpg", :border => 
+          <%= link_to image_tag("/assets/BUSINESSCONCEPTS.jpg", :class => "homepagelinks", :border => 
 0 ), businessconcepts_path , :title => "Business Concepts", id: "bizconimg" %> 
         <h2> 
-		 <%= link_to "BUSINESS CONCEPTS", businessconcepts_path %>
+		 <%= link_to "BUSINESS CONCEPTS", businessconcepts_path, :class => "homepagelinks" %>
 		 </h2>
        </div>
        <div class="span4">
           <%= link_to image_tag("/assets/camera.jpg", :border => 
-0 ), photography_path , :title => "Photography" %> 
+0 ), photography_path , :class => "homepagelinks", :title => "Photography" %> 
         <h2>
-		<%= link_to "PHOTOGRAPHY", photography_path %>
+		<%= link_to "PHOTOGRAPHY", photography_path, :class => "homepagelinks" %>
 		</h2>
 	    </div>
         <div class="span4">
           <%= link_to image_tag("/assets/worldmap.gif", :border => 
-0 ), blog_path , :title => "Business Concepts" %> 
+0 ), "http://blog.tommycskinner.com" , :class => "homepagelinks", :title => "Blog" %> 
         <h2>  
-		<%= link_to "BLOG", blog_path %>
+		<%= link_to "BLOG", "http://blog.tommycskinner.com", :class => "homepagelinks" %>
 		</h2>
         </div>
       </div>
-     </div>
-
-      <hr>
 
       <footer>
         <p>&copy; Tommy Skinner 2012</p>

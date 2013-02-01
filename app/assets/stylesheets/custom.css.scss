@@ -45,14 +45,7 @@ textarea {
   width: auto;
   margin-left: "30px";
   margin-right: "30px";
-    }
-
-.row {
-	margin-left: "100px";
-	margin-right: "100px";
 }
-
-/* typography */
 
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
@@ -92,12 +85,15 @@ p {
 
 .homepagelinks {
 	color: #000000;
-	font: "calibri";
+	font-family: "Calibri";
 }
 
-.link_to{
+.homepagelinks:HOVER {
 	color: #000000;
+	opacity: 0.4;
+	text-decoration: none;
 }
+
 
 /* header */
 
@@ -122,15 +118,22 @@ p {
 
 #row {
 	float: center;
-	text-align: center;
-	color: #FF7800;
-	}
-	
+	text-align:center;
+	margin-left: "100px";
+	margin-right: "100px";
+}
+
 #li{
 	color: #342733;	
 }
 
+
+
 /* Photography */
+
+.invisible{
+	opacity: 0.0;
+}
 
 .Persons-Overlay {
 	background: asset-url("worship.jpg", image) no-repeat; 
@@ -142,7 +145,7 @@ p {
 }
 
 .Persons-Overlay:HOVER {
-	background: asset-url("PERSONS.png", image) no-repeat; 
+	background: asset-url("PERSONSinvert.jpg", image) no-repeat; 
 	width: 320px;
 	height: 214px;
 }
@@ -157,13 +160,13 @@ p {
 }
 
 .Places-Overlay:HOVER {
-	background: asset-url("PLACES.png", image) no-repeat; 
+	background: asset-url("PLACESinvert.jpg", image) no-repeat; 
 	width: 320px;
 	height: 214px;
 }	
 
 .Things-Overlay {
-	background: asset-url("tokyoservice.jpg", image) no-repeat;
+	background: asset-url("tokyo.jpg", image) no-repeat;
 	width: 320px;
 	height: 214px;
 	display: block;
@@ -172,14 +175,14 @@ p {
 }
 
 .Things-Overlay:HOVER {
-	background: asset-url("THINGS.png", image) no-repeat; 
+	background: asset-url("THINGSinvert.jpg", image) no-repeat; 
 	width: 320px;
 	height: 214px;
 }
 
-.span12 {
+.span12{
 	margin-bottom: 0px;
-    margin-top: 80px;
+    margin-top: 100px;
     width: 960px;
 }
 
@@ -198,9 +201,6 @@ p {
 	height: 214px;
 }
 
-.dialog-modal{
-	align: center;
-}
 
 /*BUSINESS CONCEPTS*/
 
@@ -221,7 +221,7 @@ p {
 }
 
 .HELO-Overlay{
-	background: asset-url("HELO.png", image) no-repeat; 
+	background: asset-url("HELOinvert.jpg", image) no-repeat; 
 	width: 320px;/*width: of image*/;
 	height: 214px;
 	float: center;
@@ -231,11 +231,13 @@ p {
 }
 
 .HELO-Overlay:HOVER{
-	
+	background: asset-url("heloshorts.jpg", image) no-repeat; 
+	width: 320px;
+	height: 214px;
 }
 
 .DTF-Overlay{
-	background: asset-url("DTF.png", image) no-repeat; 
+	background: asset-url("DTFinvert.jpg", image) no-repeat; 
 	width: 320px;/*width: of image*/;
 	height: 214px;
 	float: center;
@@ -245,13 +247,13 @@ p {
 }
 
 .DTF-Overlay:HOVER{
-	background: asset-url("DTFcomp.jpg", image) no-repeat; 
+	background: asset-url("dtflogo.jpg", image) no-repeat; 
 	width: 320px;
 	height: 214px;
 }
 
 .SPANK-Overlay{
-	background: asset-url("SPANK.png", image) no-repeat; 
+	background: asset-url("SPANKinvert.jpg", image) no-repeat; 
 	width: 320px;/*width: of image*/;
 	height: 214px;
 	float: center;
@@ -267,7 +269,7 @@ p {
 }
 
 .EUROBEGO-Overlay{
-	background: asset-url("EUROBEGO.png", image) no-repeat; 
+	background: asset-url("EUROBEGOinvert.jpg", image) no-repeat; 
 	width: 320px;/*width: of image*/;
 	height: 214px;
 	float: center;
@@ -277,11 +279,13 @@ p {
 }
 
 .EUROBEGO-Overlay:HOVER{
-	
+	background: asset-url("eurobegologo.jpg", image) no-repeat; 
+	width: 320px;
+	height: 214px;
 }
 
 .WATERBEERS-Overlay{
-	background: asset-url("WATERBEERS.png", image) no-repeat; 
+	background: asset-url("WATERBEERSinvert.jpg", image) no-repeat; 
 	width: 320px;/*width: of image*/;
 	height: 214px;
 	float: center;
@@ -291,11 +295,13 @@ p {
 }
 
 .WATERBEERS-Overlay:HOVER{
-	
+	background: asset-url("waterbeerslogo.jpg", image) no-repeat; 
+	width: 320px;
+	height: 214px;
 }
 
 .SOAPBOX-Overlay{
-	background: asset-url("SOAPBOX.png", image) no-repeat; 
+	background: asset-url("SOAPBOXinvert.jpg", image) no-repeat; 
 	width: 320px;/*width: of image*/;
 	height: 214px;
 	float: center;
@@ -305,31 +311,120 @@ p {
 }
 
 .SOAPBOX-Overlay:HOVER{
-	
+	background: asset-url("soapboxlogo.jpg", image) no-repeat; 
+	width: 320px;
+	height: 214px;
+}
+
+#dtfmodal{
+    width: 651px;
+    margin: -50px 0 0 -325px;
+}
+
+#helomodal{
+	width: 490px;
+	margin: -50px 0 0 -245px;
+}
+
+#spankmodal{
+    width: 470px;
+	margin: -50px 0 0 -235px;
+}
+
+#eurobegomodal{
+	width: 585px;
+	margin: -30px 0 0 -295px;
+}
+
+#waterbeersmodal{
+	width: 645px;
+	margin: -60px 0 0 -322px;
+}
+
+#soapboxmodal{
+	width: 700px;
+	margin: -40px 0 0 -350px;
+}
+
+.modal-footer {
+	position:relative;
+    text-align:left;
+}
+
+.waterbeersmodal-body{
+    max-height: 1000px;
 }
 
 /*ABOUT*/
 
-.TWorld{
-	background: asset-url("tworld.jpg", image) no-repeat; 
-	width: 960px;/*width: of image*/;
-	height: 100px;
-	float: center;
-	display: block;
-	text-indent: -1000px;
-	overflow: hidden;
-	margin-bottom: 5px;
+.aboutmeheader{
+	margin-bottom: 0px;
+    margin-top: 20px;
+    width: 960px;
 }
 
-.About{
-	background: asset-url("aboutbody.jpg", image) no-repeat; 
+.About-Overlay{
+	background: asset-url("aboutmebanner.jpg", image) no-repeat; 
 	width: 960px;/*width: of image*/;
-	height: 500px;
+	height: 300px;
 	float: center;
 	display: block;
 	text-indent: -1000px;
 	overflow: hidden;
-	margin-top: 0px;
+}
+
+.About-Overlay:HOVER{
+	background: asset-url("aboutmebannerinverse.jpg", image) no-repeat; 
+	width: 960px;
+	height: 300px;
+}
+
+.workexperience-Overlay{
+	background: asset-url("workexperienceinvert.jpg", image) no-repeat; 
+	width: 320px;/*width: of image*/;
+	height: 214px;
+	float: center;
+	display: block;
+	text-indent: -1000px;
+	overflow: hidden;	
+}
+
+.workexperience-Overlay:HOVER{
+	background: asset-url("workexperience.jpg", image) no-repeat; 
+	width: 320px;
+	height: 214px;
+}
+
+.skillsandinterests-Overlay{
+	background: asset-url("skillsandinterestsinvert.jpg", image) no-repeat; 
+	width: 320px;/*width: of image*/;
+	height: 214px;
+	float: center;
+	display: block;
+	text-indent: -1000px;
+	overflow: hidden;		
+}
+
+.skillsandinterests-Overlay:HOVER{
+	background: asset-url("skillsandinterests.jpg", image) no-repeat; 
+	width: 320px;
+	height: 214px;	
+}
+
+.contactme-Overlay{
+	background: asset-url("contactmeinvert.jpg", image) no-repeat; 
+	width: 320px;/*width: of image*/;
+	height: 214px;
+	float: center;
+	display: block;
+	text-indent: -1000px;
+	overflow: hidden;	
+}
+
+.contactme-Overlay:HOVER{
+	background: asset-url("contactme.jpg", image) no-repeat; 
+	width: 320px;
+	height: 214px;		
 }
 
 /*fun*/
@@ -344,3 +439,4 @@ p {
 	overflow: hidden;
 	margin-top: 0px;	
 }
+

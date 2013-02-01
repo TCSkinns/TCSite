@@ -1,32 +1,121 @@
-<div class= "container">
+<!DOCTYPE html>   
+<html lang="en">   
 
-<div class="row">
-	<div class="span12">
-		<a href="#" class="BIZ-Overlay">BIZ Overlay</a>
+<head>   
+<title>Tommy's Business Concepts</title>    
+</head>  
+
+<body>  
+<div class="container"> 
+    <div class="row">
+		<div class="aboutmeheader">
+			<a class="BIZ-Overlay">BIZ Overlay</a>
+		</div>
 	</div>
+
+    <div id="dtfmodal" class="modal hide fade in" style="display: none; ">  
+        <div class="modal-header">  
+       	    <a class="close" data-dismiss="modal">×</a>  
+        </div>  
+
+        <div class="dtfmodal-body">  
+            <%= image_tag("DTFposter.jpg", :alt => "DTF") %>               
+        </div>   
+
+        <div class="modal-footer">  
+            <p><b>CREDITS:</b> Gabe Guido (www.gabeguido.com) for copy writing and Stephanie Limon (www.stephanielimon.com) for art direction</p>  
+	    </div> 
+    </div>  
+
+    <div id="helomodal" class="modal hide fade in" style="display: none; ">  
+        <div class="modal-header">  
+       	    <a class="close" data-dismiss="modal">×</a>  
+        </div>  
+
+        <div class="helomodal-body">  
+            <%= image_tag("helocomp.jpg", :alt => "helo") %>               
+        </div>    
+
+        <div class="modal-footer">  
+            <p><b>CREDIT:</b> Jake Howison is credited with concepting and founding helo clothes.  I am an active partner in the business, as we work to aggressively grow.</p>  
+	    </div>
+	</div>  
+
+    <div id="spankmodal" class="modal hide fade in" style="display: none; ">  
+        <div class="modal-header">  
+       	    <a class="close" data-dismiss="modal">×</a>  
+        </div>  
+
+        <div class="spankmodal-body">  
+            <%= image_tag("spankad.jpg", :alt => "spank") %>               
+        </div>  
+	</div>  
+
+
+    <div id="eurobegomodal" class="modal hide fade in" style="display: none; ">  
+        <div class="modal-header">  
+            <a class="close" data-dismiss="modal">×</a>  
+        </div>  
+
+        <div class="eurobegomodal-body">  
+            <%= image_tag("eurobegoad.jpg", :alt => "eurobego advert") %>               
+        </div>    
+    </div>  
+
+    <div id="waterbeersmodal" class="modal hide fade in" style="display: none; ">  
+        <div class="modal-header">  
+            <a class="close" data-dismiss="modal">×</a>  
+        </div>  
+
+        <div class="waterbeersmodal-body">  
+            <%= image_tag("waterbeersad.jpg", :alt => "waterbeers advert") %>               
+        </div>    
+    </div>      
+
+    <div id="soapboxmodal" class="modal hide fade in" style="display: none; ">  
+        <div class="modal-header">  
+            <a class="close" data-dismiss="modal">×</a>  
+        </div>  
+
+        <div class="soapboxmodal-body">  
+            <%= image_tag("soapboxad.jpg", :alt => "soapbox advert") %>               
+        </div>    
+    </div>  
+
+	<div class="row">
+		<div class="span4">
+			<a data-toggle="modal" href="#helomodal" class="HELO-Overlay">Overlay</a>
+		</div>
+		<div class="span4">
+			<a data-toggle="modal" href="#dtfmodal" class="DTF-Overlay">Overlay</a>
+		</div>
+		<div class="span4">
+			<a data-toggle="modal" href="#spankmodal" class="SPANK-Overlay">Overlay</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="span4">
+			<a data-toggle="modal" href="#eurobegomodal" class="EUROBEGO-Overlay">Overlay</a>
+		</div>
+		<div class="span4">
+			<a data-toggle="modal" href="#waterbeersmodal" class="WATERBEERS-Overlay">Overlay</a>
+		</div>
+		<div class="span4">
+			<a data-toggle="modal" href="#soapboxmodal" class="SOAPBOX-Overlay">Overlay</a>
+		</div>
+	</div>
+
+	<footer>
+    	</br>
+    	</br>
+    	<p>&copy; Tommy Skinner 2012</p>
+    </footer>
+
 </div>
 
-<div class="row">
-	<div class="span4">
-		<a href="#" class="HELO-Overlay">HELO Overlay</a>
-	</div>
-	<div class="span4">
-		<a href="#" class="DTF-Overlay">DTF Overlay</a>
-	</div>
-	<div class="span4">
-		<a href="#" class="SPANK-Overlay">SPANK Overlay</a>
-	</div>
-</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+    <script src="javascripts/js/bootstrap-modal.js"></script>  
 
-<div class="row">
-	<div class="span4">
-		<a href="#" class="EUROBEGO-Overlay">EUROBEGO Overlay</a>
-	</div>
-	<div class="span4">
-		<a href="#" class="WATERBEERS-Overlay">WATERBEERS Overlay</a>
-	</div>
-	<div class="span4">
-		<a href="#" class="SOAPBOX-Overlay">SOAPBOX Overlay</a>
-	</div>
-</div>
-</div>
+</body>
+</html>  
