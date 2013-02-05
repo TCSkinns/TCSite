@@ -327,8 +327,8 @@ p {
 }
 
 #spankmodal{
-    width: 510px;
-	margin: -330px 0 0 -255px;
+    width: 376px;
+	margin: -330px 0 0 -188px;
 }
 
 #eurobegomodal{
@@ -426,6 +426,21 @@ p {
 	background: asset-url("contactme.jpg", image) no-repeat; 
 	width: 320px;
 	height: 214px;		
+}
+
+#experiencemodal {
+	width: 700px;
+	margin: -260px 0 0 -350px;
+}
+
+#skillsmodal {
+	width: 700px;
+	margin: -260px 0 0 -350px;
+}
+
+#contactmemodal {
+	width: 700px;
+	margin: -260px 0 0 -350px;
 }
 
 /*fun*/
