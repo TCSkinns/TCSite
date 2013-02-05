@@ -3,13 +3,9 @@ gem 'rails', '3.2.11'
 
 gem 'bootstrap-sass'
 
-gem 'tumblr4r'
-
 gem 'redbox'
 
 gem 'webrick', '1.3.1'
-
-gem 'bootstrap-addons-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
