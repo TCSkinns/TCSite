@@ -97,6 +97,13 @@ p {
 
 /* header */
 
+#homeheader{
+	margin-bottom: 0px;
+    margin-top: 0px;
+    width: 960px;
+ }
+
+
 #logo {
 	float: left;
 	margin-right: 10px;
@@ -166,7 +173,7 @@ p {
 }	
 
 .Things-Overlay {
-	background: asset-url("tokyo.jpg", image) no-repeat;
+	background: asset-url("nzglacierthumb.jpg", image) no-repeat;
 	width: 320px;
 	height: 214px;
 	display: block;
@@ -439,8 +446,8 @@ p {
 }
 
 #contactmemodal {
-	width: 680px;
-	margin: -260px 0 0 -340px;
+	width: 600px;
+	margin: -260px 0 0 -300px;
 }
 
 /*fun*/
